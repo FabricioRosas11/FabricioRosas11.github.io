@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenge - Desafio 1 - Encriptador</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="container-main">
+      <section class="container-texto">
+        <h1>
+          <img src="assets/Logo.png" alt="Alura">
+        </h1>
+        <div class="bg-input">
+          
+          <div class="input-text">
+            <!-- <input type="text" placeholder="Ingresa el texto aqui"> -->
+            <textarea name="texto" id="texto" placeholder="Ingrese el texto aqui"></textarea>
+          </div>
+          <div class="container-btn">
+            <p>
+              <span class="iconify" data-icon="bi:exclamation-circle-fill" style="color: #65747d;"></span>
+              Solo letras minusculas y sin acentos
+            </p>
+            <div class="btn">
+              <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
+              <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
+            </div>
+          </div>
+        </div>
+        
+      </section>
+      <section class="container-resultado">
+        <div class="bg-result" id="bg-result">
+          <img src="assets/Muñeco.png" id="imgPrincipal" alt="Persona buscando con una lupa">
+          <div>
+          </div>
+          <div class="mensaje-principal" id="msjPrincipal">
+            <h2>Ningun mensaje fue encontrado</h2>
+          </div>
+          <div class="mensaje-secundario" id="resultado">
+            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+          </div>
+          <div class="btn-copiar" id="btn-copiar">
+            <button class="btn-desencriptar" id="btn-desencriptar" onclick="copiar()">
+              Copiar
+            </button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
