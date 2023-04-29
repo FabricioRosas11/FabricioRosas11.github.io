@@ -9,48 +9,35 @@
 </head>
 <body>
     <div class="container-main">
-      <section class="container-texto">
+      <section class="container-logo">
         <h1>
-          <img src="assets/Logo.png" alt="Alura">
+          <img src="img/logo.png" alt="Alura">
         </h1>
-        <div class="bg-input">
-          
-          <div class="input-text">
-            <!-- <input type="text" placeholder="Ingresa el texto aqui"> -->
-            <textarea name="texto" id="texto" placeholder="Ingrese el texto aqui"></textarea>
-          </div>
-          <div class="container-btn">
-            <p>
-              <span class="iconify" data-icon="bi:exclamation-circle-fill" style="color: #65747d;"></span>
-              Solo letras minusculas y sin acentos
-            </p>
-            <div class="btn">
-              <button class="btn-encriptar" onclick="encriptar()">Encriptar</button>
-              <button class="btn-desencriptar" onclick="desencriptar()">Desencriptar</button>
-            </div>
-          </div>
-        </div>
-        
       </section>
-      <section class="container-resultado">
-        <div class="bg-result" id="bg-result">
-          <img src="assets/Muñeco.png" id="imgPrincipal" alt="Persona buscando con una lupa">
-          <div>
+      <section class="container-texto">
+        <textarea class="textarea-main" title="Texto a encriptar" placeholder="Ingrese el texto aquí" name="texto" id="texto"></textarea>
+        <div class="footer-texto">
+          <div class="mensaje">
+            <img src="img/alerta.png" title="Solo letras minúsculas y sin acentos">
+              <small>Solo letras minúsculas y sin acentos</small>
           </div>
-          <div class="mensaje-principal" id="msjPrincipal">
-            <h2>Ningun mensaje fue encontrado</h2>
+          <div class="botones-texto">
+            <button class="button-primary" title="Encriptar" id="encriptar">Encriptar</button>
+            <button class="button-secondary" title="Desencriptar" id="desencriptar">Desencriptar</button>
           </div>
-          <div class="mensaje-secundario" id="resultado">
-            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
-          </div>
-          <div class="btn-copiar" id="btn-copiar">
-            <button class="btn-desencriptar" id="btn-desencriptar" onclick="copiar()">
-              Copiar
-            </button>
-          </div>
+      </div>
+      </section>
+      <section class="container-texto2">
+        <div class="vacio" id="vacio">
+          <img src="img/Muñeco.png" alt="Nigun mensaje encontrado">
+          <h2>Ningun mensaje fue encontrado</h2>
+        <label>Ingresa el texto que desees encriptar o desencriptar</label>
+        </div>
+        <div class="activo" id="activo">
+          <textarea name="textoF" id="textof" title="Texto final"></textarea>
+          <button class="button-secondary" title="Copiar" id="copiar">Copiar</button>
         </div>
       </section>
-    </div>
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
   </body>
 </html>
